@@ -1,6 +1,6 @@
-# Exponential mortality curves and selective disappearance emerge from first principles of stochastic failure accumulation
+# Code for Bhat and Kokko, "Stochastic failure accumulation as a foundation for exponential mortality and selective disappearance"
 
-This repo contains scripts required to replicate the figures presented in the main text.
+This repo contains scripts required to replicate the figures presented in the main text of "Stochastic failure accumulation as a foundation for exponential mortality and selective disappearance" by Bhat and Kokko, 2026.
 
 - `fig_2AB.r` reproduces Figure 2A and Figure 2B. These figures compare logistic failure accumulation + geometric mortality and logistic failure accumulation + linear mortality for the Tithonus model with a Gompertz-Makeham curve. The output is stored as SVG in the `output` folder.
 - `fig_2CD.r` reproduces Figure 2C and Figure 2D. These figures compare the expected behaviour of the Tithonus model for various finite values of N with the expected behaviour for infinite N. The output is stored as SVG in the `output` folder.
