@@ -155,7 +155,7 @@ lineplot
 
 
 #uncomment below to save the figure as an SVG
-ggsave(filename = './output/fig_2A.svg',plot=lineplot,width=12,height=12)
+#ggsave(filename = './output/fig_2A.svg',plot=lineplot,width=12,height=12)
 
 
 
@@ -167,4 +167,4 @@ logplot <- lineplot + scale_y_continuous(trans='log') + ylab("log mortality rate
 logplot
 
 #uncomment below to save the figure as an SVG
-ggsave(filename = './output/fig_2B.svg',plot=logplot,width=12,height=12)
+#ggsave(filename = './output/fig_2B.svg',plot=logplot,width=12,height=12)
