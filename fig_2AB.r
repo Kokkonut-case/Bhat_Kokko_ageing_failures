@@ -94,7 +94,7 @@ plateau_time <- function(phi,f0,kr){
 
 my_params <- list(phi = 0.001, #intrinsic failure (constant component)
                   k = 0.1, #interdependence rate (coefficient of linear component)
-                  mu_e = 0.01, #extrinsic mortality
+                  mu_e = 1e-5, #extrinsic mortality
                   chi = 1,   #how strongly failures impact mortality
                   f0 = 0.001 #initial condition
 )
@@ -155,7 +155,7 @@ lineplot
 
 
 #uncomment below to save the figure as an SVG
-#ggsave(filename = './output/fig_2A.svg',plot=lineplot,width=12,height=12)
+ggsave(filename = './output/fig_2A.svg',plot=lineplot,width=12,height=12)
 
 
 
@@ -167,4 +167,4 @@ logplot <- lineplot + scale_y_continuous(trans='log') + ylab("log mortality rate
 logplot
 
 #uncomment below to save the figure as an SVG
-#ggsave(filename = './output/fig_2B.svg',plot=logplot,width=12,height=12)
+ggsave(filename = './output/fig_2B.svg',plot=logplot,width=12,height=12)

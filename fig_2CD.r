@@ -147,7 +147,7 @@ lineplot
 # suppressWarnings(print(lineplot)) #view the plot
 
 # #uncomment below to save the figure as an SVG
-#ggsave(file='./output/fig_2C.svg', plot=lineplot, width=10, height=10)
+ggsave(file='./output/fig_2C.svg', plot=lineplot, width=10, height=10)
 # 
 # #################################
 # #also plot the same curves on a log scale
@@ -159,4 +159,4 @@ logplot
 # #suppressWarnings(print(logplot)) #view the plot
 # 
 # #uncomment below to save the figure as an SVG
-#ggsave(file='./output/fig_2D.svg', plot=logplot, width=10, height=10)
+ggsave(file='./output/fig_2D.svg', plot=logplot, width=10, height=10)
