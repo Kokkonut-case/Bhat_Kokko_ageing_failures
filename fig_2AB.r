@@ -22,8 +22,8 @@ gompertz_makeham <- function(t,phi,k,mu_e,chi,f0){
   beta <- phi + k
   
   #from our analytics
-  M <- mu_e - (chi*phi)/(k-phi)
-  a <- chi*alpha/((k-phi)*(1-f0))
+  M <- mu_e - (chi*phi)/(k+phi)
+  a <- chi*alpha/((k+phi)*(1-f0))
     
   return (M + a*exp(beta*t))
 }

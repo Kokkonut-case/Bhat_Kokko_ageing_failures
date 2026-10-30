@@ -25,8 +25,8 @@ gompertz_makeham <- function(t,phi,k,mu_e,chi,f0){
   beta <- phi + k
   
   #from our analytics
-  M <- mu_e - (chi*phi)/(k-phi)
-  a <- chi*alpha/((k-phi)*(1-f0))
+  M <- mu_e - (chi*phi)/(k+phi)
+  a <- chi*alpha/((k+phi)*(1-f0))
   
   return (M + a*exp(beta*t))
 }
@@ -91,14 +91,14 @@ expected_finite_N_solution <- Vectorize(expected_finite_N_solution)
 #X and Y axis scales are unparameterized/arbitrary anyway.
 my_params <- list(phi = 0.001, #intrinsic failure (constant component)
                   k = 0.1, #interdependence rate (coefficient of linear component)
-                  mu_e = 1e-2, #extrinsic mortality
+                  mu_e = 1e-5, #extrinsic mortality
                   chi = 0.2,   #how strongly failures impact mortality
                   f0 = 0.01 #initial condition
 )
 
-#base layer. Control the axis limits and padding here
+#base layer. Control the axis limits and padding here. Limits chosen here are arbitrary.
 lineplot <- ggplot() + scale_x_continuous(limits = c(50,95), expand = c(0,0))
-lineplot <- lineplot + scale_y_continuous(limits = c(-0.5,39), expand = c(0,0))
+lineplot <- lineplot + scale_y_continuous(limits = c(-0.5,50), expand = c(0,0))
 
 
 ###########################
