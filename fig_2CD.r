@@ -2,6 +2,8 @@
 # Compare how the deterministic predictions compare to
 # expected trajectory of finite N (stochastic) systems that we got from Ito
 # for the Tithonus model
+# This code reproduces Fig 2C and 2D of Bhat and Kokko 2026,
+# "Stochastic failure accumulation as a foundation for exponential mortality and selective disappearance"
 # Written by Shikhara Bhat
 # JGU Mainz, Germany
 # Date: Mon Oct 06 20:33:41 2025

@@ -1,5 +1,7 @@
 ############################
 # Illustrate conditional expectation on paths (the Feynman-Kac result)
+# This code reproduces Fig 3 of Bhat and Kokko 2026,
+# "Stochastic failure accumulation as a foundation for exponential mortality and selective disappearance"
 # Written by Shikhara Bhat
 # JGU Mainz, Germany
 # Date: Tue Feb 24 17:03:47 2026

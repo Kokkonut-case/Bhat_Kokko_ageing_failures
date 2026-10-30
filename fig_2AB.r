@@ -1,6 +1,9 @@
 ############################
-# Make plots comparing Gompertz-Makeham and logistic failure/mortality curves
-# For the ageing networks manuscript
+# Make plots comparing Gompertz-Makeham curves with the
+# Tithonus model with the logistic failure accumulation rule and
+# either linear or geometric mortality rule.
+# This code reproduces Fig 2A and 2B of Bhat and Kokko 2026,
+# "Stochastic failure accumulation as a foundation for exponential mortality and selective disappearance"
 # Written by Shikhara Bhat
 # JGU Mainz, Germany
 # Date created: Fri Apr 11 15:04:02 2025

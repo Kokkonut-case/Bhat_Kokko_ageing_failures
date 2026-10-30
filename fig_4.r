@@ -1,7 +1,9 @@
 ############################
 # Compute expected survivorship at the point where the deviation between
 # the model with disappearance and the model without disappearance first
-# exceeds a fixed threshold
+# exceeds a fixed threshold.
+# This code reproduces Fig 4 of Bhat and Kokko 2026,
+# "Stochastic failure accumulation as a foundation for exponential mortality and selective disappearance"
 # Written by Shikhara Bhat
 # JGU Mainz, Germany
 # Date: Sat Mar 28 23:27:01 2026
@@ -13,7 +15,7 @@ library(ggplot2) #for plotting
 
 set.seed(314) #for reproducibility
 
-save_figs <- F #should you save the plots to file or just view them?
+save_figs <- T #should you save the plots to file or just view them?
 #########################
 #define parameters
 
